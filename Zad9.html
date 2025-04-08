@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+    function liczbaLosowa(min,max){
+      return Math.floor(Math.random()*max);
+    }
+    function wypelnijTablice(ileLiczb,min,max){
+      const tablica = [];
+      for (let i=0;i<ileLiczb;i++) {
+        tablica.push(liczbaLosowa(min,max));
+      }
+      return tablica;
+    }
+    const tablicaLiczb = wypelnijTablice(10, 1, 100);
+    document.write(tablicaLiczb)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        var wprtablica = prompt("Wprowadź ciąg liczb(1 2 3 10)");
+        const tablica = wprtablica.split(" ");
+        if(tablica!=null){
+            alert(tablica);
+            console.log(tablica)
+            var podanaLiczba = prompt("Podaj liczbe całkowitą by sprawdzić ile razy się powtarza");
+            if(tablica.includes(podanaLiczba) && Number.isInteger(podanaLiczba)){
+                const ileRazy = tablica.filter(num => num == podanaLiczba).length
+                console.log('Liczba '+podanaLiczba+' występuje '+ileRazy+'razy');
+            }else{
+                console.log('Liczba '+podanaLiczba+' nie występuje w tabeli lub nie jest liczba całkowitą')
+            }
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
